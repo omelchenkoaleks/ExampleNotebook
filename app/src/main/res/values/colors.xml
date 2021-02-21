@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // shades of brown
+    <color name="brown_200">#b2aa9d</color>
+    <color name="brown_700">#4e412b</color>
+    <color name="brown_900">#332718</color>
+    <color name="brown_800">#413422</color>
+
+    // shades of red
+    <color name="red_200">#ffa98e</color>
+    <color name="red_700">#E64412</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>
