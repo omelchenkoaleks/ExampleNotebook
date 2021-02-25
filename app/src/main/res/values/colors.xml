@@ -2,6 +2,7 @@
 <resources>
 
     // shades of brown
+    <color name="brown_50">#ecebe8</color>
     <color name="brown_200">#b2aa9d</color>
     <color name="brown_700">#4e412b</color>
     <color name="brown_900">#332718</color>
@@ -10,6 +11,10 @@
     // shades of red
     <color name="red_200">#ffa98e</color>
     <color name="red_700">#E64412</color>
+
+    // shades of grey
+    <color name="grey_400">#b0b0b0</color>
+    <color name="grey_500">#909090</color>
 
 
     <color name="black">#FF000000</color>

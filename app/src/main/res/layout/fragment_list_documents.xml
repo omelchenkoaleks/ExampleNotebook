@@ -21,4 +21,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:paddingEnd="@dimen/padding_8"
+        android:paddingStart="@dimen/padding_8"
+        android:background="@drawable/bg_search"
+        android:searchIcon="@drawable/ic_search"
+        android:queryHint="@string/hint_search_view"
+        android:theme="@style/searchStyle"
+        android:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_documents"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:theme="@style/recyclerListDocumentsStyle"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:padding="@dimen/padding_8"
+        android:background="@drawable/bg_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

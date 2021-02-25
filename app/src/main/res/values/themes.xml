@@ -19,4 +19,14 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="searchStyle" parent="Theme.Notebook">
+        <item name="android:editTextColor">@color/brown_900</item>
+        <item name="android:textColorHint">@color/grey_500</item>
+        <item name="android:backgroundTint">@color/brown_50</item>
+    </style>
+
+    <style name="recyclerListDocumentsStyle" parent="Theme.Notebook">
+        <item name="android:backgroundTint">@color/brown_50</item>
+    </style>
+
 </resources>
