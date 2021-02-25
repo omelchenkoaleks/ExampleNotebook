@@ -7,4 +7,7 @@
     <!--  Hints  -->
     <string name="hint_search_view">Search your document</string>
 
+    <!--  Description  -->
+    <string name="desc_fab">To go to the screen for creating a new document.</string>
+
 </resources>

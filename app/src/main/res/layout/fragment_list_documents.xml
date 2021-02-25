@@ -27,30 +27,85 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginEnd="@dimen/margin_16"
-        android:paddingEnd="@dimen/padding_8"
-        android:paddingStart="@dimen/padding_8"
         android:background="@drawable/bg_search"
-        android:searchIcon="@drawable/ic_search"
-        android:queryHint="@string/hint_search_view"
-        android:theme="@style/searchStyle"
         android:iconifiedByDefault="false"
+        android:paddingStart="@dimen/padding_8"
+        android:paddingEnd="@dimen/padding_8"
+        android:queryHint="@string/hint_search_view"
+        android:searchIcon="@drawable/ic_search"
+        android:theme="@style/searchStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_list_documents"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:theme="@style/recyclerListDocumentsStyle"
         android:layout_marginTop="@dimen/margin_8"
         android:layout_marginBottom="@dimen/margin_8"
-        android:padding="@dimen/padding_8"
         android:background="@drawable/bg_recycler"
+        android:padding="@dimen/padding_8"
+        android:theme="@style/recyclerListDocumentsStyle"
+        app:layout_constraintBottom_toTopOf="@+id/btn_phonebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_view"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
 
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_phonebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_contacts" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_chat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_phonebook"
+        app:layout_constraintStart_toEndOf="@+id/btn_phonebook"
+        app:layout_constraintTop_toTopOf="@+id/btn_phonebook"
+        app:srcCompat="@drawable/ic_chat" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_images"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_phonebook"
+        app:layout_constraintStart_toEndOf="@+id/btn_chat"
+        app:layout_constraintTop_toTopOf="@+id/btn_phonebook"
+        app:srcCompat="@drawable/ic_images" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_microphone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_phonebook"
+        app:layout_constraintStart_toEndOf="@+id/btn_images"
+        app:layout_constraintTop_toTopOf="@+id/btn_phonebook"
+        app:srcCompat="@drawable/ic_microphone" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:contentDescription="@string/desc_fab"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_list_documents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_list_documents"
+        app:tint="@color/grey_500" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
