@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/detailDocumentFragment"
-        android:name="com.example.notebook.DetailDocumentFragment"
+        android:name="com.example.notebook.CreateDocumentFragment"
         android:label="fragment_detail_document"
-        tools:layout="@layout/fragment_detail_document" >
+        tools:layout="@layout/fragment_create_document" >
         <action
             android:id="@+id/action_detailDocumentFragment_to_listDocumentsFragment"
             app:destination="@id/listDocumentsFragment" />

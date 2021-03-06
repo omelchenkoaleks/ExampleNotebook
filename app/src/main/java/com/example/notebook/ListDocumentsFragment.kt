@@ -44,7 +44,6 @@ class ListDocumentsFragment : Fragment() {
         searchText.typeface = typeface
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

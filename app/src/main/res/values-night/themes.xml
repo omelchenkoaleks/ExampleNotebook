@@ -21,6 +21,7 @@
     </style>
 
     <style name="searchStyle" parent="Theme.Notebook">
+        <item name="android:textSize">@dimen/size_14</item>
         <item name="android:editTextColor">@color/white</item>
         <item name="android:textColorHint">@color/grey_400</item>
         <item name="android:backgroundTint">@color/brown_800</item>

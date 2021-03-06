@@ -2,7 +2,7 @@
     <string name="app_name">Notebook</string>
 
     <!--  TextView  -->
-    <string name="notes_tv">Notes</string>
+    <string name="documents_tv">Documents</string>
 
     <!--  Hints  -->
     <string name="hint_search_view">Search your document</string>

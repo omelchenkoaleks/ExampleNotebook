@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateDocumentFragment">
+
+    <ImageButton
+        android:id="@+id/ib_button_back_from_create_document"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="@dimen/margin_16"
+        app:layout_constraintTop_toTopOf="@+id/tv_page_title_create_document"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_page_title_create_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="Document Creation"
+        android:layout_marginEnd="@dimen/margin_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_datetime_create_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2"
+        android:text="15.03.2021 13:00"
+        android:textSize="@dimen/size_10"
+        app:layout_constraintTop_toBottomOf="@+id/tv_page_title_create_document"
+        app:layout_constraintEnd_toEndOf="@+id/tv_page_title_create_document"/>
+
+    <EditText
+        android:id="@+id/et_document_title_create_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:text="Document Title"
+        app:layout_constraintTop_toBottomOf="@+id/ib_button_back_from_create_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_document_subtitle_create_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:text="Document Subtitle"
+        app:layout_constraintTop_toBottomOf="@id/et_document_title_create_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_text_document_create_document"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_document_subtitle_create_document"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_image"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_add_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_images" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_add_link"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_image"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_image"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_image"
+        app:srcCompat="@drawable/ic_url" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_add_document"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_image"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_link"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_image"
+        app:srcCompat="@drawable/ic_document" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_add_color"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_add_image"
+        app:layout_constraintStart_toEndOf="@+id/btn_add_document"
+        app:layout_constraintTop_toTopOf="@+id/btn_add_image"
+        app:srcCompat="@drawable/ic_palette" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_create_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_save"
+        app:tint="@color/grey_500"
+        app:layout_constraintTop_toBottomOf="@id/et_text_document_create_document"
+        app:layout_constraintBottom_toBottomOf="@+id/et_text_document_create_document"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
