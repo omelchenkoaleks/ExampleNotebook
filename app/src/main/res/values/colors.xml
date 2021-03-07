@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <!--  documents colors  -->
+    <color name="red_document_50">#feebf0</color>
+    <color name="red_document_100">#fdcdd7</color>
+    <color name="red_document_500">#f93549</color>
+    <color name="red_document_700">#d72140</color>
+
+
     // shades of brown
     <color name="brown_50">#ecebe8</color>
     <color name="brown_200">#ffecd1</color>
@@ -13,11 +21,16 @@
     <color name="red_700">#E64412</color>
 
     // shades of grey
+    <color name="grey_100">#f0f0f0</color>
+    <color name="grey_200">#e6e6e6</color>
     <color name="grey_400">#b0b0b0</color>
     <color name="grey_500">#909090</color>
+    <color name="grey_700">#555555</color>
+    <color name="grey_800">#373737</color>
 
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="color_text">#101821</color>
 
 </resources>

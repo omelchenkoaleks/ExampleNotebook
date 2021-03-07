@@ -2,12 +2,17 @@
     <string name="app_name">Notebook</string>
 
     <!--  TextView  -->
-    <string name="documents_tv">Documents</string>
+    <string name="page_title_documents">Documents</string>
+    <string name="page_title_document_creation">Document Creation</string>
 
     <!--  Hints  -->
     <string name="hint_search_view">Search your document</string>
+    <string name="hint_document_title">Document Title</string>
+    <string name="hint_document_subtitle">Document Subtitle</string>
+    <string name="hint_text_document">Write your document here</string>
 
     <!--  Description  -->
     <string name="desc_fab">To go to the screen for creating a new document.</string>
+    <string name="desc_back_from_document_creation">Button to return to the previous window.</string>
 
 </resources>

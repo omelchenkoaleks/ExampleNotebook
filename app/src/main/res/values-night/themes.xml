@@ -15,6 +15,8 @@
         <item name="android:windowBackground">@color/brown_900</item>
     </style>
 
+    <!--  Layout fragment_list_documents  -->
+
     <style name="textTitleStyle" parent="Theme.Notebook">
         <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
@@ -29,6 +31,36 @@
 
     <style name="recyclerListDocumentsStyle" parent="Theme.Notebook">
         <item name="android:backgroundTint">@color/brown_800</item>
+    </style>
+
+    <!--  Layout fragment_create_document  -->
+
+    <style name="datetimeStyle" parent="Theme.Notebook">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="documentTitleCreationStyle" parent="Theme.Notebook">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey_200</item>
+    </style>
+
+    <style name="containerSubtitleColorStyle" parent="Theme.Notebook">
+        <item name="android:backgroundTint">@color/red_document_700</item>
+    </style>
+
+    <style name="documentSubtitleStyle" parent="Theme.Notebook">
+        <item name="android:textColorHint">@color/grey_100</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="colorSetupStyle" parent="Theme.Notebook">
+        <item name="android:backgroundTint">@color/red_document_100</item>
+    </style>
+
+    <style name="textDocumentCreationStyle" parent="Theme.Notebook">
+        <item name="android:backgroundTint">@color/brown_800</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey_200</item>
     </style>
 
 </resources>

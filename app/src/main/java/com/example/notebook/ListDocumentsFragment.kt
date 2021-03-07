@@ -2,13 +2,13 @@ package com.example.notebook
 
 import android.graphics.Typeface
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
 import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
+import androidx.fragment.app.Fragment
 import com.example.notebook.databinding.FragmentListDocumentsBinding
 import com.example.notebook.utils.APP_ACTIVITY
 
@@ -33,7 +33,7 @@ class ListDocumentsFragment : Fragment() {
         binding.searchView.setTypeFace(typeface)
 
         binding.fab.setOnClickListener {
-            APP_ACTIVITY.navController.navigate(R.id.action_listDocumentsFragment_to_detailDocumentFragment)
+            APP_ACTIVITY.navController.navigate(R.id.action_listDocumentsFragment_to_createDocumentFragment)
         }
     }
 

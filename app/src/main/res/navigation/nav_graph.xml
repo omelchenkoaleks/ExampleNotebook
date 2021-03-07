@@ -11,16 +11,18 @@
         android:label="fragment_list_documents"
         tools:layout="@layout/fragment_list_documents" >
         <action
-            android:id="@+id/action_listDocumentsFragment_to_detailDocumentFragment"
-            app:destination="@id/detailDocumentFragment" />
+            android:id="@+id/action_listDocumentsFragment_to_createDocumentFragment"
+            app:destination="@id/createDocumentFragment" />
     </fragment>
+
     <fragment
-        android:id="@+id/detailDocumentFragment"
+        android:id="@+id/createDocumentFragment"
         android:name="com.example.notebook.CreateDocumentFragment"
-        android:label="fragment_detail_document"
+        android:label="fragment_create_document"
         tools:layout="@layout/fragment_create_document" >
         <action
-            android:id="@+id/action_detailDocumentFragment_to_listDocumentsFragment"
+            android:id="@+id/action_createDocumentFragment_to_listDocumentsFragment"
             app:destination="@id/listDocumentsFragment" />
     </fragment>
+
 </navigation>
